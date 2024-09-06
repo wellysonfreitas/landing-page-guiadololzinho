@@ -137,11 +137,21 @@ nav a img{
 
 .home-img img{
     max-width: 100%;
+    height: auto;
 }
 
-@media (max-width:785px){
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+@media (max-width:768px){
     .navgation{
-        padding: 10px 4px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
     }
 
     .menu{
@@ -167,7 +177,7 @@ nav a img{
         width: 100%;
         height: 100%;
         flex-direction: column;
-        background: #9A8C98;
+        background: #9c9c9c;
         gap: -10px;
         transition: 0.3s;
     }
@@ -180,40 +190,67 @@ nav a img{
         margin: 16px 0;
     }
 
-    button{
+    .login {
+        width: 100%;
+        display: flex;
         flex-direction: column;
-        display: inline-block;
+        align-items: center;
+        gap: 10px;
     }
 
-    .login{
-        display: block;
+    .login button{
+        width: 20%;
+        margin: 5px 0;
+        
     }
     /*main*/
 
     .home{
-        padding: 100px 2%;
         flex-direction: column;
         text-align: center;
-        overflow: hidden;
+        padding: 100px 2%;
         gap: 5rem;
+    }
+
+    .home-text{
+        max-width: 100%;
     }
 
     .home .text-h4{
         font-size: 20px;
     }
 
-    .home .text-h1{
+    .home-text .text-h1{
         font-size: 3rem;
         line-height: 3rem;
     }
 
-    .home p{
+    .home-text p{
         font-size: 1rem;
     }
 
     .home-img{
         max-width: 100%;
     } 
+
+    .home-img img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-text h1{
+        font-size: 24px;
+    }
+
+    .home-text p{
+        font-size: 14px;
+    }
+
+    .login button{
+        padding: 8px;
+    }
 }
 
 
