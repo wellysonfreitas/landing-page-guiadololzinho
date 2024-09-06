@@ -196,14 +196,11 @@ nav a img{
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        color: #080808e1;
     }
 
     .login button{
         width: 20%;
         margin: 5px 0;
-        color: #080808e1;
-        
     }
     /*main*/
 
@@ -252,7 +249,6 @@ nav a img{
 
     .login button{
         padding: 8px;
-        color: #080808e1;
     }
 }
 
